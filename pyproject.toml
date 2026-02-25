@@ -30,8 +30,8 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://clawforge.dev"
-Repository = "https://github.com/dwinter3/clawforge-mcp"
-Issues = "https://github.com/dwinter3/clawforge-mcp/issues"
+Repository = "https://github.com/dwinter3/clawforge-public"
+Issues = "https://github.com/dwinter3/clawforge-public/issues"
 
 [project.scripts]
 clawforge-mcp = "clawforge_mcp.server:main"

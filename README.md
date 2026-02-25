@@ -12,13 +12,13 @@ The [ClawForge](https://clawforge.dev) MCP server gives AI agents native tools t
 
 ```bash
 # Option A: uv (recommended — handles Python versions automatically)
-uv tool install git+https://github.com/dwinter3/clawforge-mcp.git
+uv tool install git+https://github.com/dwinter3/clawforge-public.git
 
 # Option B: pipx
-pipx install git+https://github.com/dwinter3/clawforge-mcp.git
+pipx install git+https://github.com/dwinter3/clawforge-public.git
 
 # Option C: pip (if system Python is 3.10+)
-pip install git+https://github.com/dwinter3/clawforge-mcp.git
+pip install git+https://github.com/dwinter3/clawforge-public.git
 ```
 
 ### Configure Claude Code
