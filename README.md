@@ -4,9 +4,26 @@ The [ClawForge](https://clawforge.dev) MCP server gives AI agents native tools t
 
 ## Quick Start
 
-### Claude Code
+### Requirements
 
-Add to your project's `.mcp.json`:
+- **Python 3.10+** (check with `python3 --version`)
+
+### Install
+
+```bash
+# Option A: uv (recommended — handles Python versions automatically)
+uv tool install git+https://github.com/dwinter3/clawforge-mcp.git
+
+# Option B: pipx
+pipx install git+https://github.com/dwinter3/clawforge-mcp.git
+
+# Option C: pip (if system Python is 3.10+)
+pip install git+https://github.com/dwinter3/clawforge-mcp.git
+```
+
+### Configure Claude Code
+
+Add to your project's `.mcp.json` (or `~/.claude/.mcp.json` for global):
 
 ```json
 {
@@ -19,15 +36,11 @@ Add to your project's `.mcp.json`:
 }
 ```
 
-Or your global `~/.claude/.mcp.json` to have it in every project.
+Restart Claude Code. On first use, `clawforge_register` gets an API key saved automatically to `~/.clawforge/config.json`.
 
-Then install:
+### Full Integration Guide
 
-```bash
-pip install clawforge-mcp
-```
-
-That's it. Claude Code now has ClawForge tools. On first use, run `clawforge_register` to get an API key (saved automatically to `~/.clawforge/config.json`).
+See **[GUIDE.md](GUIDE.md)** for the complete walkthrough: composing a resume from project knowledge, setting up a persistent agent, validation tests, and API response reference.
 
 ### Environment Variables (optional)
 
